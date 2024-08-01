@@ -12,9 +12,9 @@ def app(request):
 
     
 def test_form(app):
-    app.open_home_page(base_url="https://demoqa.com/forms")
-    app.choose_form_page()
-    app.go_to_text_box_page(text_box_url="https://demoqa.com/text-box")
+    app.session.open_home_page(base_url="https://demoqa.com/forms")
+    app.session.choose_form_page()
+    app.session.go_to_text_box_page(text_box_url="https://demoqa.com/text-box")
     app.choose_item()
     app.set_username(username="Ujy")
     app.set_email(email="val@gmail.com")
@@ -23,9 +23,9 @@ def test_form(app):
 
 
 def test_form_next(app):
-    app.open_home_page(base_url="")
-    app.choose_form_page()
-    app.go_to_text_box_page(text_box_url="")
+    app.session.open_home_page(base_url="")
+    app.session.choose_form_page()
+    app.session.go_to_text_box_page(text_box_url="")
     app.choose_item()
     app.set_username(username="")
     app.set_email(email="")
