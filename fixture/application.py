@@ -1,5 +1,5 @@
 from selenium import webdriver
-from location import Location
+from model.location import Location
 class Application:
 
 

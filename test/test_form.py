@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pytest
-from location import Location
-from application import Application
+from model.location import Location
+from fixture.application import Application
 
 
 @pytest.fixture
